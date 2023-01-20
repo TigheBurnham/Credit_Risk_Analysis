@@ -2,9 +2,9 @@
 
 ## Overview of the Analysis
 
-In this module we learned that machine learning utilizes statistical algorithms to learn from data patterns and to make predictions. The main focus of the module delved into supervised machine learning. For our challenge we were tasked with looking at credit risk. It was stated that credit risk is an unbalanced classification problem because there are usually more good loans than there are risky loans. Therefore, this challenge required us to utilze different techniques to evaluate models with unbalanced classes. The models that were used for this task were the imbalanced-learn and scikit-learn libraries.
+In this module we learned that machine learning utilizes statistical algorithms to learn from data patterns and to make predictions. The main focus of the module delved into supervised machine learning. For our challenge we were tasked with looking at credit risk. It was stated that credit risk is an unbalanced classification problem because there are usually more good loans than there are risky loans. Therefore, this challenge required us to utilize different modeling techniques to evaluate the unbalanced classes. The libraries that were used for this task were imbalanced-learn and scikit-learn.
 
-The data in this challenge was from the credit card dataset at LendingClub. LendingClub is a peer-to-peer lending services company. After loading in the data we were tasked to use RandomOverSampler, SMOTE, and ClusterCentroids algorithms to over and under sample the data. Next we used BalancedRandomForestClassifier and EasyEnsembleClassifier to predict credit risk. 
+The data in this challenge was from the credit card dataset at LendingClub. LendingClub is a peer-to-peer lending services company. After loading in the data we were tasked to use RandomOverSampler, SMOTE, and ClusterCentroids algorithms to over and under sample the data. Next we also used BalancedRandomForestClassifier and EasyEnsembleClassifier to predict credit risk. 
 
 There were three technical analysis deliverables:
 
@@ -64,4 +64,4 @@ The low risk precision score was 100% with a recall of 95%.
 
 ## Summary
 
-
+The six models used in this challenge showed weak precision to predict if the credit risk is high. The EasyEnsembleClassifier model had the highest balance score of 93%, the highest risk precision score of 9%, and the best high risk recall score of 92%. Therefore, out of all the models the EasyEnsembleClassifier is the best at predicting high credit risk. However, because the risk precision score is still low at 9% the model still runs a high chance to falsely detect low credit scores as high risk. Since many low credit scores will be viewed as high risk this would impact the banks credit business as other banks and financial institutions will provide loans to these applicants.
