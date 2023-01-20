@@ -1,63 +1,45 @@
 # Credit_Risk_Analysis
 
-## Overview 
+## Overview of the Analysis
 
-Machine learning is the use of statistical algorithms to perform tasks such as learning from data patterns and making predictions. There are many different models—a model is a mathematical representation of something that happens in the real world—and you'll learn about several this week.
+In this module we learned that machine learning utilizes statistical algorithms to learn from data patterns and to make predictions. The main focus of the module delved into supervised machine learning. For our challenge we were tasked with looking at credit risk. It was stated that credit risk is an unbalanced classification problem because there are usually more good loans than there are risky loans. Therefore, this challenge required us to utilze different techniques to evaluate models with unbalanced classes. The models that were used for this task were the imbalanced-learn and scikit-learn libraries.
 
-Broadly speaking, machine learning can be divided into three learning categories: supervised, unsupervised, and deep. For our purposes, we'll only discuss supervised and unsupervised learning.`
+The data in this challenge was from the credit card dataset at LendingClub. LendingClub is a peer-to-peer lending services company. After loading in the data we were tasked to use RandomOverSampler, SMOTE, and ClusterCentroids algorithms to over and under sample the data. Next we used BalancedRandomForestClassifier and EasyEnsembleClassifier to predict credit risk. 
 
-Jill commends you for all your hard work. Piece by piece, you’ve been building up your skills in data preparation, statistical reasoning, and machine learning. You are now ready to apply machine learning to solve a real-world challenge: credit card risk.
+There were three technical analysis deliverables:
 
-Credit risk is an inherently unbalanced classification problem, as good loans easily outnumber risky loans. Therefore, you’ll need to employ different techniques to train and evaluate models with unbalanced classes. Jill asks you to use imbalanced-learn and scikit-learn libraries to build and evaluate models using resampling.
+- Deliverable 1: Use Resampling Models to Predict Credit Risk.
+- Deliverable 2: Use the SMOTEENN Algorithm to Predict Credit Risk.
+- Deliverable 3: Use Ensemble Classifiers to Predict Credit Risk.
 
-Using the credit card credit dataset from LendingClub, a peer-to-peer lending services company, you’ll oversample the data using the RandomOverSampler and SMOTE algorithms, and undersample the data using the ClusterCentroids algorithm. Then, you’ll use a combinatorial approach of over- and undersampling using the SMOTEENN algorithm. Next, you’ll compare two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk. Once you’re done, you’ll evaluate the performance of these models and make a written recommendation on whether they should be used to predict credit risk.
+## Results
 
-This new assignment consists of three technical analysis deliverables and a written report. You will submit the following:
+- RandomOverSampler model
 
-Deliverable 1: Use Resampling Models to Predict Credit Risk.
-Deliverable 2: Use the SMOTEENN Algorithm to Predict Credit Risk.
-Deliverable 3: Use Ensemble Classifiers to Predict Credit Risk.
-Deliverable 4: A Written Report on the Credit Risk Analysis (README.md).
+![Oversample](https://user-images.githubusercontent.com/112028534/213634505-2e4e882c-db07-40da-aa9e-497e0beada16.PNG)
 
-By the end of this module, you will be able to: 
 
-Explain how a machine learning algorithm is used in data analytics.
-Create training and test groups from a given data set.
-Implement the logistic regression, decision tree, random forest, and support vector machine algorithms.
-Interpret the results of the logistic regression, decision tree, random forest, and support vector machine algorithms.
-Compare the advantages and disadvantages of each supervised learning algorithm.
-Determine which supervised learning algorithm is best used for a given data set or scenario.
-Use ensemble and resampling techniques to improve model performance.
 
-Deliverable 4: Written Report on the Credit Risk Analysis
-For this deliverable, you’ll write a brief summary and analysis of the performance of all the machine learning models used in this Challenge.
+- SMOTE model
 
-The report should contain the following:
+![Smote Over](https://user-images.githubusercontent.com/112028534/213634526-30895ede-d77b-4d91-9cf7-b4b1d0608013.PNG)
 
-Overview of the analysis: Explain the purpose of this analysis.
+- ClusterCentroids model
 
-Results: Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all six machine learning models. Use screenshots of your outputs to support your results.
+![Cluster](https://user-images.githubusercontent.com/112028534/213634477-cdb0b295-89c6-4593-8053-535b9693556b.PNG)
 
-Summary: Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning.
+- SMOTEENN model
 
-Deliverable 4: Written Report on the Credit Risk Analysis (30 points)
-Structure, Organization, and Formatting
-The written analysis has the following structure, organization, and formatting:
+![Smoteenn](https://user-images.githubusercontent.com/112028534/213634546-cc01a682-b3dd-4809-94aa-12437a0e29e7.PNG)
 
-There is a title, and there are multiple sections (2 pt)
-Each section has a heading and subheading (2 pt)
-Links to images are working, and code is formatted and displayed correctly (2 pt).
-Analysis
-The written analysis has the following:
+- BalancedRandomForestClassifier model
 
-Overview of the loan prediction risk analysis:
+![RF](https://user-images.githubusercontent.com/112028534/213634589-6e059360-49c1-4100-a97f-7e50aa7bda6c.PNG)
 
-The purpose of this analysis is well defined (4 pt)
-Results:
+- EasyEnsembleClassifier model
 
-There is a bulleted list that describes the balanced accuracy score and the precision and recall scores of all six machine learning models (15 pt)
-Summary:
+![EE](https://user-images.githubusercontent.com/112028534/213634611-15e25e9f-d317-4d4f-ace9-35d7bedeef74.PNG)
 
-There is a summary of the results (2 pt)
-There is a recommendation on which model to use, or there is no recommendation with a justification (3 pt)
-Grading
+## Summary
+
+
