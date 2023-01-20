@@ -18,27 +18,49 @@ There were three technical analysis deliverables:
 
 ![Oversample](https://user-images.githubusercontent.com/112028534/213634505-2e4e882c-db07-40da-aa9e-497e0beada16.PNG)
 
-
+The Balance Score is 63%.
+The high risk precision score is 1% with a recall of 65%; therefore, the F1 score is 2%.
+The low risk precision was 100% with a recall of 61%.
 
 - SMOTE model
 
 ![Smote Over](https://user-images.githubusercontent.com/112028534/213634526-30895ede-d77b-4d91-9cf7-b4b1d0608013.PNG)
 
+The Balance Score is 66%.
+The high risk precision score is 1% with a recall of 63%; therefore, the F1 score is 2%.
+The low risk precision score was 100% with a recall of 69%.
+
 - ClusterCentroids model
 
 ![Cluster](https://user-images.githubusercontent.com/112028534/213634477-cdb0b295-89c6-4593-8053-535b9693556b.PNG)
+
+The Balance Score is 66%
+The high risk precision score is 1% with a recall of 69%; therefore, the F1 score is 1%.
+The low risk precision score was 100% with a recall of 40%.
 
 - SMOTEENN model
 
 ![Smoteenn](https://user-images.githubusercontent.com/112028534/213634546-cc01a682-b3dd-4809-94aa-12437a0e29e7.PNG)
 
+The Balance Score is 54%
+The high risk precision score is 1% with a recall of 72%; therefore, the F1 score is 2%.
+The low risk precision score was 100% with a recall of 57%.
+
 - BalancedRandomForestClassifier model
 
 ![RF](https://user-images.githubusercontent.com/112028534/213634589-6e059360-49c1-4100-a97f-7e50aa7bda6c.PNG)
 
+The Balance Score is 79%
+The high risk precision score is 3% with a recall of 70%; therefore, the F1 score is 6%
+The low risk precision score was 100% with a recall of 87%.
+
 - EasyEnsembleClassifier model
 
 ![EE](https://user-images.githubusercontent.com/112028534/213634611-15e25e9f-d317-4d4f-ace9-35d7bedeef74.PNG)
+
+The Balance Score is 93%
+The high risk precision score is 9% with a recall of 92%; therefore, the F1 score is 17%.
+The low risk precision score was 100% with a recall of 95%.
 
 ## Summary
 
